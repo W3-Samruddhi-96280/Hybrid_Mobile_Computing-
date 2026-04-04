@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         body{
+             /* background: linear-gradient(to bottom, #2b5876, #4e4376); */
+             min-height: 150vh;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             display: block;
+             background-color: rgba(0, 0, 0, 0.1);
+        }
+
+            .main{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;   /* center everything properly */
+            }
+
+            h1{
+               margin-bottom: 30px;
+            }
+
+        .image-container{
+            display:inline-block;
+            
+            background-color: white;
+            padding: 80px;
+            /* min-width: 150px;
+            height: 250px; */
+            border-radius: 1px;
+            margin: 8px;
+            justify-content: center;
+            /* box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1); */
+         }
+
+        .container{
+            display:flex;
+            border:flex ;
+            border: dotted 3px black;
+            justify-content: center;
+            align-items: center;
+            gap:25px;
+            background-color:whitesmoke;
+            padding:20px;
+        }
+
+       
+
+        .item{
+            width:220px;
+    
+            margin:10px;
+            padding:20px;
+            background-color: white;
+            text-align: center;
+             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+          /*  line-height:2em;  */
+
+        }
+
+        button{
+            width:100px;
+            height: 40px;
+            background-color: green;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+        button:hover{
+            background-color: darkgreen;
+        }
+
+          img{
+            height: 120px;
+            width: 150px;
+            align-content: center;
+             
+            box-sizing: content-box;          
+        }
+
+        .description{
+             font-size: 12px;  
+            text-align: center;
+            margin: 10px 0;
+            color: #555; 
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        .price{
+            text-align: center;
+            color: #ff6600;
+            font-weight: bold;
+            
+        }
+
+        .product{
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="main">
+
+    <h1> Our Products </h1>
+
+    <div class="container"> 
+        <div class="item">
+            <img src="images/bag.png" alt ="">
+             <hr/>
+            <div class="product"> Product 1 </div>
+            <div class="description">High-quality product<br>that meets your needs</div>
+            <div class="price">$805</div>
+            <div class="button">
+                <button>Add to Cart </button>
+            </div>
+        </div>
+      
+        <div class="item">
+            <img src="images/keyboard.png" alt="">
+            <hr/>
+            <div class="product">Product 2</div>
+              <div class="description">Excellent craftsmanship<br>and durable design</div>
+            <div class="price">$11.50</div>
+            <div class="button">
+            <button>Add to Cart </button>
+            </div>
+         </div>
+
+        <div class="item">
+            <img src="images/laptop.png" alt="">
+            <hr/>
+            <div class="product">Product 3</div>
+            <div class="description">Reliable and affordable<br>choice for everyone</div>
+            <div class="price">$12.00</div>
+            <div class="button">
+                <button>Add to Cart </button>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>    
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment_2: Q3</title>
+</head>
+<body>
+
+    <center>
+        <img src="image/sunbeamnewactslogo.png" alt="Sunbeam Logo" width="200">
+     
+    </center>
+
+    <br>
+
+    <table border="0" align="center" >
+        <tr>
+         
+            <td>
+                <video  controls>
+                    <source src="video/sample2.mov" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </td>
+
+            <!-- Form Section -->
+            <td>
+                <form action="result.html" method="GET">
+
+                    <table>
+
+                        <tr>
+                            <td>Name:</td>
+                            <td>
+                                <input type="text"
+                                 name="name"
+                                 required
+                                 placeholder="Enter Name">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Birth Date:</td>
+                            <td>
+                                <input type="date" 
+                                name="birth-date">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Email:</td>
+                            <td>
+                                <input type="email" 
+                                name="email" 
+                                required 
+                                placeholder="Enter Email">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Password:</td>
+                            <td>
+                                <input type="password" 
+                                name="password" 
+                                required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Address:</td>
+                            <td>
+                                <textarea rows="4" 
+                                 name="address"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Gender:</td>
+                            <td>
+                                <input type="radio" 
+                                name="gender" 
+                                value="male"> Male
+                                <input type="radio" 
+                                name="gender" 
+                                value="female"> Female
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Upload Photo:</td>
+                            <td>
+                                <input type="file" name="photo">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Skill Set:</td>
+                            <td>
+                                <input type="checkbox" name="c"> C
+                                <input type="checkbox" name="cpp"> CPP
+                                <input type="checkbox" name="java"> Java
+                                <input type="checkbox" name="js"> JavaScript
+                                <input type="checkbox" name="go"> Golang
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="Register">
+                                <input type="reset" value="Clear">
+                            </td>
+                        </tr>
+
+                         </table>
+
+    </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
