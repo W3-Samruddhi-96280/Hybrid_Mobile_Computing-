@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Responsive Navbar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .custom-navbar {
+            background: linear-gradient(90deg, #0d6efd, #6610f2);
+        }
+
+        .custom-navbar .navbar-brand {
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .custom-navbar .navbar-brand:hover {
+            color: #ffc107;
+        }
+
+        .custom-navbar .nav-link {
+            color: white;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+
+        .custom-navbar .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .custom-navbar .nav-link.active {
+            color: #ffc107;
+        }
+
+        .custom-btn {
+            background-color: #ffc107;
+            color: black;
+            border: none;
+        }
+
+        .custom-btn:hover {
+            background-color: white;
+            color: #0d6efd;
+        }
+
+        .navbar-toggler {
+            border: 1px solid white;
+        }
+
+        .navbar-toggler-icon {
+            filter: brightness(0) invert(1);
+        }
+
+        .hero-section {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+
+        @media (max-width: 768px) {
+            .custom-navbar .nav-link {
+                margin-left: 0;
+                padding: 10px 0;
+            }
+
+            .custom-btn {
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyWebsite</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+
+                </ul>
+
+                <a href="#" class="btn custom-btn ms-lg-3">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <h1>Responsive Bootstrap Navbar</h1>
+        <p>This navbar works on desktop, tablet, and mobile screen sizes.</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

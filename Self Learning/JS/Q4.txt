@@ -1,0 +1,39 @@
+html
+│
+├── head
+│   ├── title
+│   └── link
+│
+└── body
+    │
+    ├── header
+    │   ├── h1
+    │   └── p
+    │
+    ├── nav
+    │   ├── a  → Home
+    │   ├── a  → About Us
+    │   ├── a  → Courses
+    │   └── a  → Contact Us
+    │
+    ├── main
+    │   ├── section
+    │   │   ├── h2
+    │   │   ├── p
+    │   │   ├── div
+    │   │   │   ├── h3
+    │   │   │   ├── p
+    │   │   │   ├── p
+    │   │   │   └── p
+    │   │   │
+    │   │   └── form
+    │   │       ├── label
+    │   │       ├── input
+    │   │       ├── label
+    │   │       ├── input
+    │   │       ├── label
+    │   │       ├── textarea
+    │   │       └── button
+    │
+    └── footer
+        └── p

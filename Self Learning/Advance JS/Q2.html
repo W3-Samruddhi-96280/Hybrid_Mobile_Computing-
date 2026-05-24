@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Object Example</title>
+</head>
+<body>
+
+    <h2>Check Console for Output</h2>
+
+    <script>
+        function Mobile(name, company, price) {
+            this.name = name;
+            this.company = company;
+            this.price = price;
+        }
+
+        Mobile.prototype.displayDetails = function () {
+            console.log("Using Constructor Function");
+            console.log("Name: " + this.name);
+            console.log("Company: " + this.company);
+            console.log("Price: " + this.price);
+        };
+
+        let mobile1 = new Mobile("Note 30 Pro", "Infinix", 19999);
+        mobile1.displayDetails();
+
+
+        class MobileClass {
+            constructor(name, company, price) {
+                this.name = name;
+                this.company = company;
+                this.price = price;
+            }
+
+            displayDetails() {
+                console.log("Using Class");
+                console.log("Name: " + this.name);
+                console.log("Company: " + this.company);
+                console.log("Price: " + this.price);
+            }
+        }
+
+        let mobile2 = new MobileClass("Galaxy S24", "Samsung", 74999);
+        mobile2.displayDetails();
+    </script>
+
+</body>
+</html>

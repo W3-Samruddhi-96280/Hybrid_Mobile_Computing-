@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details Table</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 30px;
+        }
+
+        input, button {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Course Form</h2>
+
+    <input type="text" id="studentName" placeholder="Enter Student Name">
+    <input type="text" id="studentCourse" placeholder="Enter Student Course">
+    <button id="addBtn">Add Student</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Student Course</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentTableBody">
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function () {
+            $("#addBtn").click(function () {
+                let name = $("#studentName").val();
+                let course = $("#studentCourse").val();
+
+                if (name === "" || course === "") {
+                    alert("Please enter both student name and course");
+                } else {
+                    $("#studentTableBody").append(
+                        "<tr><td>" + name + "</td><td>" + course + "</td></tr>"
+                    );
+
+                    $("#studentName").val("");
+                    $("#studentCourse").val("");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

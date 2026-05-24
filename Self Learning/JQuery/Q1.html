@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Traversal Methods</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            color: red;
+            font-weight: bold;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>jQuery Traversal Example</h2>
+
+    <div id="mainDiv" class="box">
+        Main Div
+
+        <div class="parent box">
+            Parent Div
+
+            <p>Paragraph 1</p>
+            <p id="selectedPara">Selected Paragraph</p>
+            <p>Paragraph 3</p>
+
+            <span>Span inside Parent Div</span>
+        </div>
+
+        <div class="siblingDiv box">
+            Sibling Div
+        </div>
+    </div>
+
+    <br>
+
+    <button id="parentBtn">parent()</button>
+    <button id="childrenBtn">children()</button>
+    <button id="findBtn">find()</button>
+    <button id="siblingsBtn">siblings()</button>
+    <button id="resetBtn">Reset</button>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#parentBtn").click(function () {
+                $("*").removeClass("highlight");
+                $("#selectedPara").parent().addClass("highlight");
+            });
+
+            $("#childrenBtn").click(function () {
+                $("*").removeClass("highlight");
+                $(".parent").children().addClass("highlight");
+            });
+
+            $("#findBtn").click(function () {
+                $("*").removeClass("highlight");
+                $("#mainDiv").find("p").addClass("highlight");
+            });
+
+            $("#siblingsBtn").click(function () {
+                $("*").removeClass("highlight");
+                $("#selectedPara").siblings().addClass("highlight");
+            });
+
+            $("#resetBtn").click(function () {
+                $("*").removeClass("highlight");
+            });
+
+        });
+    </script>
+
+</body>
+</html>

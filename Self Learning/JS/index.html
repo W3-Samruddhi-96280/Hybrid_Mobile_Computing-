@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Input Example</title>
+</head>
+<body>
+
+    <h2>Select a Date</h2>
+
+    <label for="dateInput">Choose Date:</label>
+    <input type="date" id="dateInput">
+
+    <button onclick="displayDate()">Submit</button>
+
+    <script>
+        function displayDate() {
+            let selectedDate = document.getElementById("dateInput").value;
+            console.log("Selected Date: " + selectedDate);
+        }
+    </script>
+
+</body>
+</html>

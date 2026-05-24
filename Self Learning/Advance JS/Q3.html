@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date and Person Association</title>
+</head>
+<body>
+
+    <h2>Check Console for Output</h2>
+
+    <script>
+        // Using Constructor Functions
+
+        function MyDate(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        MyDate.prototype.displayDate = function () {
+            return this.day + "/" + this.month + "/" + this.year;
+        };
+
+        function Person(name, dateofbirth) {
+            this.name = name;
+            this.dateofbirth = dateofbirth;
+        }
+
+        Person.prototype.displayDetails = function () {
+            console.log("Using Constructor Function");
+            console.log("Name: " + this.name);
+            console.log("Date of Birth: " + this.dateofbirth.displayDate());
+        };
+
+        let dob1 = new MyDate(15, 8, 2002);
+        let person1 = new Person("Rahul", dob1);
+
+        person1.displayDetails();
+
+
+        // Using Class
+
+        class MyDateClass {
+            constructor(day, month, year) {
+                this.day = day;
+                this.month = month;
+                this.year = year;
+            }
+
+            displayDate() {
+                return this.day + "/" + this.month + "/" + this.year;
+            }
+        }
+
+        class PersonClass {
+            constructor(name, dateofbirth) {
+                this.name = name;
+                this.dateofbirth = dateofbirth;
+            }
+
+            displayDetails() {
+                console.log("Using Class");
+                console.log("Name: " + this.name);
+                console.log("Date of Birth: " + this.dateofbirth.displayDate());
+            }
+        }
+
+        let dob2 = new MyDateClass(20, 12, 2001);
+        let person2 = new PersonClass("Priya", dob2);
+
+        person2.displayDetails();
+    </script>
+
+</body>
+</html>
